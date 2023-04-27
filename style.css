@@ -1,0 +1,181 @@
+/* 
+RMIT University Vietnam
+Course: COSC2430 Web Programming
+Semester: 2023A
+Assessment: Assignment 1
+Author: Gustav Joachim Elbroend
+ID: S3995055
+Acknowledgement: 
+https://css-tricks.com/snippets/css/a-guide-to-flexbox/
+https://www.w3schools.com/css/css_rwd_mediaqueries.asp 
+*/
+
+* {
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+}
+
+main {
+    margin-bottom: 60px;
+}
+
+section {
+    display: flex;
+    flex-direction: column;
+    margin: 15px;
+    background-color: lightblue;
+    justify-content: center;
+    align-items: center;
+}
+
+h3 {
+    align-self: center;
+    padding: 5px;
+}
+
+
+h2 {
+    text-align: center;
+}
+
+.book-describtion h2 {
+    text-align: left;
+}
+
+iframe {
+    width: 90%;
+    padding: 15px;
+    height: 400px;
+}
+
+.category {
+    display: flex;
+    flex-direction: row;
+    align-content: center;
+    padding: 10px;
+    margin-bottom: 60px;
+    background-color: antiquewhite;
+}
+
+.category div {
+    padding: 10px;
+    display: flex;
+    flex-direction: column;
+}
+
+.category h4 {
+    margin: 0 auto;
+    align-self: center;
+}
+
+.category p {
+    margin: 0 auto;
+    align-self: center;
+}
+
+.breadcrumb {
+    display: inline-block;
+    align-items: center;
+}
+
+.breadcrumb li{
+    display: inline;
+    align-items: center;
+}
+
+.breadcrumb a { 
+    text-decoration: none;
+}
+
+.breadcrumb li:not(:last-child)::after {
+    content: " > ";
+    margin: 0 5px;
+}
+
+.book-pictures{
+    display: flex;
+    flex-direction: row;
+    flex-grow: 2;
+}
+.large-img {
+    max-width: 100%;
+}
+
+.small-img {
+    display: flex;
+    flex-direction: column;
+    max-width: 12%;
+}
+
+.small-img img {
+    padding: 5px;
+}
+
+.book-details {
+    display: flex;
+    flex-grow: 1;
+}
+
+.details-block {
+    display: flex;
+    flex-direction: row;
+    justify-content: space-between;
+}
+
+.book-pictures {
+    display: flex;
+}
+
+.contact-form {
+    display: flex;
+    flex-direction: column;
+}
+
+.input-setion {
+    padding-bottom: 5px;
+}
+
+@media (max-width: 960px) {
+    .category {
+        flex-direction: column;
+        width: 100%;
+    }
+
+    .category div img {
+        width: 100%;
+    }
+
+    .details-block {
+        flex-direction: column;
+    }
+
+    .book-pictures {
+        flex-direction: column;
+        width: 100%;
+    }
+
+    .small-img {
+        flex-direction: row;
+        justify-content: center;
+    }
+
+    .small-img img {
+        padding: 2px;
+        max-width: 80%;
+
+    }
+
+
+    .input-setion {
+        display: flex;
+        flex-direction: column;
+    }
+
+    .input-section label {
+        width: 100%;
+    }
+
+    
+
+}

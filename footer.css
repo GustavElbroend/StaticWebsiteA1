@@ -1,0 +1,26 @@
+/* 
+RMIT University Vietnam
+Course: COSC2430 Web Programming
+Semester: 2023A
+Assessment: Assignment 1
+Author: Gustav Joachim Elbroend
+ID: S3995055
+Acknowledgement:
+*/
+
+footer{
+    display: flex;
+    flex-direction: wrap;
+    text-align: center;
+    justify-content: space-between;
+    background-color:blanchedalmond;
+    color: burlywood;
+    bottom: 0px;
+    width: 100%;
+    position: fixed;
+}
+
+footer a {
+    text-decoration: underline;
+    padding: 15px;
+}

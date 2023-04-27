@@ -1,0 +1,95 @@
+<!-- RMIT University Vietnam
+Course: COSC2430 Web Programming
+Semester: 2023A
+Assessment: Assignment 1
+Author: Gustav Joachim Elbroend
+ID: S3995055
+Acknowledgement: https://www.w3schools.com/howto/howto_css_breadcrumbs.asp -->
+
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <link rel="stylesheet" type="text/css" href="style.css">
+    <link rel="stylesheet" type="text/css" href="header.css">
+    <link rel="stylesheet" type="text/css" href="footer.css">
+    <script type="text/javascript" src="script.js"></script>
+
+    <title>My Bookstore Book Details</title>
+</head>
+
+<body>
+    <header>
+        <nav class="navbar">
+            <div class="logo"> <a href="index.html">
+                    <img src="photos\bookStoreLogo.png" alt="bookStoreLogo">
+                </a>
+            </div>
+            <a href="#" class="toggle-buttom">
+                <span class="bar"></span>
+                <span class="bar"></span>
+                <span class="bar"></span>
+            </a>
+            <div class="navbar-menues">
+                <ul class="links">
+                    <li><a href="index.html">Home</a></li>
+                    <li><a href="categoryPage.html">Categories</a></li>
+                    <li><a href="contactPage.html">Contact</a></li>
+                </ul>
+            </div>
+        </nav>
+    </header>
+
+    <main>
+        <nav class="breadcrumb">
+            <ul>
+                <li><a href="index.html">Home</a></li>
+                <li><a href="categoryPage.html">Category</a></li>
+                <li><a href="bookDetailPage.html">1984</a></li>
+            </ul>
+        </nav>
+        <section class="details-block">
+            <section class="book-pictures">
+                <div class="large-img">
+                    <img src="photos\GO1984.png" alt="1984 bookcover"></img>
+                </div>
+                <div class="small-img">
+                    <img src="photos\GO1984.png" alt="1984 bookcover"></img>
+                    <img src="photos\GO1984.png" alt="1984 bookcover"></img>
+                    <img src="photos\GO1984.png" alt="1984 bookcover"></img>
+                </div>
+            </section>
+            <section class="book-details">
+                <h2>Price: 15$</h2>
+                <button>Add to cart</button>
+            </section>
+
+        </section>
+        <section class="book-describtion">
+            <h2>1984 by George Orwell</h2>
+            <p>Lorem ipsum dolor sit amet consectetur adipisicing elit. Architecto consectetur recusandae soluta aut
+                dolores illo cupiditate maiores dolor tempora obcaecati, quaerat ratione esse ullam laudantium
+                consequuntur delectus voluptatem deleniti porro!</p>
+        </section>
+
+    </main>
+
+    <footer>
+        <nav>
+            <a href="#">About Us</a>
+            <a href="#">Privacy Policy</a>
+            <a href="#">Terms</a>
+            <a href="contactPage.html">Contact Us</a>
+        </nav>
+        <section>
+            <span> Copyright 2023 Gustav Elbroend</span>
+        </section>
+
+    </footer>
+
+</body>
+
+</html>
